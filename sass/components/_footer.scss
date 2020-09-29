@@ -1,5 +1,7 @@
 .footer {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+
   &__logo {
     display: block;
     margin-bottom: 20px;
@@ -7,7 +9,7 @@
 
   &-container {
     padding: 60px 15px;
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
 
@@ -47,13 +49,16 @@
 }
 
 .footer-join {
-  justify-content: center;
-  max-width: 206px;
-  flex-wrap: wrap;
-  margin-right: 93px;
+  text-align: center;
+  margin-bottom: 60px;
+  // justify-content: center;
+  // max-width: 206px;
+  // flex-wrap: wrap;
+  // margin-right: 93px;
 
   &__text {
-    width: 145px;
+    // width: 145px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1, 14;
     text-transform: uppercase;
@@ -63,6 +68,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
   }
 
   &__item {
@@ -98,9 +104,11 @@
 }
 
 .footer-subscribe {
-  width: 570px;
+  text-align: center;
+  // width: 570px;
 
   &__text {
+    font-size: $font-size;
     font-weight: 700;
     line-height: 1, 14;
     text-transform: uppercase;
@@ -109,7 +117,7 @@
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     background-color: transparent;
     padding: 15px 0 15px 16px;
     font-size: 16px;
@@ -117,6 +125,7 @@
     line-height: 1.25;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    margin-bottom: 20px;
   }
 }
 
@@ -130,7 +139,7 @@
   background-color: $accent-color;
   border: none;
   cursor: pointer;
-  margin-left: 12px;
+  // margin-left: 12px;
 
   &__icon {
     vertical-align: middle;

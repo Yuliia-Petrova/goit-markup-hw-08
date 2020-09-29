@@ -1,24 +1,31 @@
 .benefits {
   &__title {
     color: $title-color;
+    font-size: $font-size;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     margin: 0 0 10px;
+    text-align: center;
   }
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
 
   &__item {
-    margin-right: 30px;
-    width: calc((100% - 30px * 3) / 4);
+    margin-bottom: 30px;
   }
 
   &__item:last-child {
-    margin-right: 0;
+    margin-bottom: 60px;
   }
+  //   width: calc((100% - 30px * 3) / 4);
+  //
+
+  // &__item:last-child {
+  //   margin-right: 0;
+  // }
 
   &__item::before {
     display: block;

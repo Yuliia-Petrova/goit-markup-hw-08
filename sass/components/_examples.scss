@@ -1,9 +1,10 @@
-.box {
-  position: relative;
-}
+// .box {
+//   position: relative;
+// }
 
 .examples {
   padding-bottom: 94px;
+  display: none;
 
   &__list {
     display: flex;
