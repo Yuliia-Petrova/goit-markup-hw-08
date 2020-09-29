@@ -1,0 +1,134 @@
+.input-forms {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field {
+  margin-top: 10px;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(14px);
+    width: 18px;
+    height: 18px;
+    fill: $title-color;
+    transition: fill $transition-duration $timing-function;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $accent-color;
+  }
+
+  &__input {
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    padding-left: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border $transition-duration $timing-function;
+  }
+
+  &:hover &__input,
+  &:hover &__textarea {
+    border: 1px solid $accent-color;
+    outline: $accent-color;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border: 1px solid $accent-color;
+    outline: $accent-color;
+  }
+
+  &__input:focus + &__icon {
+    fill: $accent-color;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+
+  &__textarea {
+    width: 448px;
+    padding: 0;
+    margin: 4px 0 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition: border $transition-duration $timing-function;
+  }
+
+  &__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-top: 12px;
+    padding-left: 16px;
+  }
+}
+
+.policy {
+  margin-bottom: 30px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    line-height: 1.71;
+  }
+
+  &__label::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-color;
+    border-radius: 2px;
+  }
+
+  &__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+  }
+
+  &__checkbox:checked + &__label::before {
+    background-color: $accent-color;
+    background-image: url(../images/policy-icon.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
+
+  &__link {
+    color: $accent-color;
+    margin-left: 4px;
+  }
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  height: 50px;
+  padding: 10px 55px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $additional-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

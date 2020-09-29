@@ -1,0 +1,35 @@
+.box {
+  position: relative;
+}
+
+.examples {
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    text-align: center;
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+  }
+}

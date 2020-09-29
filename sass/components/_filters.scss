@@ -1,0 +1,39 @@
+.portfolio {
+  padding: 94px 0;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item {
+    background-color: $primary-bg-color;
+    margin-right: 8px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__button {
+    color: $title-color;
+    background-color: $primary-bg-color;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 6px 22px;
+    transition: color $transition-duration $timing-function,
+      background-color $transition-duration $timing-function,
+      box-shadow $transition-duration $timing-function;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: $additional-color;
+    background-color: $accent-color;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08),
+      0 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

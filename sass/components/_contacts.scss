@@ -1,0 +1,34 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: $primary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color $transition-duration $timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__envelope,
+  &__tel {
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill $transition-duration $timing-function;
+  }
+
+  &__link:hover &__tel,
+  &__link:hover &__envelope {
+    fill: $accent-color;
+  }
+}
