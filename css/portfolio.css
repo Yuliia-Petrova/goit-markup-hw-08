@@ -383,7 +383,7 @@ footer {
 }
 
 .nav__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -423,7 +423,7 @@ footer {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 

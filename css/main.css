@@ -383,7 +383,7 @@ footer {
 }
 
 .nav__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 
@@ -423,7 +423,7 @@ footer {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -471,7 +471,7 @@ footer {
 .hero__container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+  padding-top: 118px;
 }
 
 .hero__title {
@@ -502,6 +502,10 @@ footer {
   outline: #2196f3;
 }
 
+.benefits {
+  padding-bottom: 60px;
+}
+
 .benefits__title {
   color: #212121;
   font-size: 14px;
@@ -513,17 +517,18 @@ footer {
 }
 
 .benefits__item {
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .benefits__item:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .benefits__item::before {
   display: block;
   content: "";
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -548,7 +553,24 @@ footer {
 }
 
 .benefits__text {
-  line-height: 1.71;
+  line-height: 1.714;
+}
+
+@media screen and (min-width: 767px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .benefits__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .benefits__item:nth-child(3), .benefits__item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 
 .examples {
@@ -590,7 +612,7 @@ footer {
 }
 
 .employee__item {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
@@ -651,8 +673,28 @@ footer {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 767px) {
+  .employee__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .employee__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .employee__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .employee__item {
+    margin-bottom: 30px;
+  }
+  .employee__item:nth-child(3), .employee__item:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
 .clients {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .clients__list {
@@ -695,6 +737,13 @@ footer {
 
 .clients__link:hover .clients__icon {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 767px) {
+  .clients__item {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
 }
 
 .footer {
