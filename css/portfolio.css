@@ -352,6 +352,12 @@ footer {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -704,5 +710,13 @@ footer {
   width: 24px;
   height: 24px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

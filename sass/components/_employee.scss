@@ -1,10 +1,8 @@
 .employee {
   background-color: $primary-bg-color;
   padding-bottom: 60px;
-  // padding-bottom: 94px;
 
   &__item {
-    // width: calc((100% - 30px * 3) / 4);
     // display: inline-block;
     // text-align: center;
     // padding-bottom: 30px;
@@ -76,7 +74,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .employee {
     &__list {
       display: flex;
@@ -99,6 +97,23 @@
     &__item:nth-child(3),
     &__item:nth-child(4) {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employee {
+    padding-bottom: 94px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+    &__item:last-child {
+      margin-right: 0;
     }
   }
 }

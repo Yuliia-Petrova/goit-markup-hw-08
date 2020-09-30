@@ -1,5 +1,4 @@
 .benefits {
-  padding-bottom: 60px;
   &__title {
     color: $title-color;
     font-size: $font-size;
@@ -52,8 +51,9 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .benefits {
+    padding-bottom: 60px;
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -75,11 +75,18 @@
   }
 }
 
-// desktop
+@media screen and (min-width: 1200px) {
+  .benefits {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      width: calc((100% - 30px) / 4);
+      margin-right: 30px;
+    }
 
-//   width: calc((100% - 30px * 3) / 4);
-//
-
-// &__item:last-child {
-//   margin-right: 0;
-// }
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+}
