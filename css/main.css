@@ -517,6 +517,10 @@ footer {
   }
 }
 
+.benefits {
+  padding: 60px 0 60px;
+}
+
 .benefits__title {
   color: #212121;
   font-size: 14px;
@@ -569,7 +573,7 @@ footer {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .benefits {
-    padding-bottom: 60px;
+    padding: 60px 0 60px;
   }
   .benefits__list {
     display: flex;

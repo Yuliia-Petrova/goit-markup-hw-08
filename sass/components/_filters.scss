@@ -3,13 +3,16 @@
 }
 
 .filters {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 10px;
 
   &__item {
     background-color: $primary-bg-color;
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 
   &__item:last-child {
