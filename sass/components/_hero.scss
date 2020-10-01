@@ -6,11 +6,11 @@
   background-position: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 178px 0 118px;
+  padding: 118px 0 118px;
 
   @media screen and (min-width: 1200px) {
     & {
-      padding: 280px 0 200px;
+      padding: 200px 0 200px;
     }
   }
 
@@ -74,12 +74,12 @@
           ),
           url(../images/header-mobile@2x.jpg);
       }
+      background-size: cover;
     }
   }
   &__container {
     margin-left: auto;
     margin-right: auto;
-    // padding-top: 118px;
   }
 
   &__title {
@@ -90,6 +90,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 0 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
 }
 
@@ -109,16 +113,5 @@
   &:focus,
   &:active {
     outline: $accent-color;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    &__container {
-      padding-top: 200px;
-      &__title {
-        font-size: 44px;
-      }
-    }
   }
 }

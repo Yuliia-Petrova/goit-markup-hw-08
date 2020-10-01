@@ -476,12 +476,12 @@ footer {
   background-position: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 178px 0 118px;
+  padding: 118px 0 118px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 280px 0 200px;
+    padding: 200px 0 200px;
   }
 }
 
@@ -512,6 +512,7 @@ footer {
 @media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
+    background-size: cover;
   }
 }
 
@@ -536,6 +537,12 @@ footer {
   margin: 0 0 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
+
 .hero-btn {
   color: #ffffff;
   font-weight: 700;
@@ -552,15 +559,6 @@ footer {
 
 .hero-btn:focus, .hero-btn:active {
   outline: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    padding-top: 200px;
-  }
-  .hero__container__title {
-    font-size: 44px;
-  }
 }
 
 .benefits {
@@ -896,6 +894,12 @@ footer {
 .footer-container {
   padding: 60px 15px;
   align-items: baseline;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    padding: 60px 15px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
