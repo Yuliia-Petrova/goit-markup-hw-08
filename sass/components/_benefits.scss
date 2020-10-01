@@ -78,12 +78,14 @@
 
 @media screen and (min-width: 1200px) {
   .benefits {
+    padding-bottom: 0;
     &__list {
       display: flex;
     }
     &__item {
       width: calc((100% - 30px) / 4);
       margin-right: 30px;
+      margin-bottom: 0;
     }
 
     &__item:last-child {

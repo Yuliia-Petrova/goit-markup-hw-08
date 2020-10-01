@@ -2,6 +2,10 @@
   text-align: center;
   margin-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+
   &__logo {
     display: block;
     margin-bottom: 20px;
@@ -9,8 +13,12 @@
 
   &-container {
     padding: 60px 15px;
-    // display: flex;
     align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__address {
@@ -51,19 +59,25 @@
 .footer-join {
   text-align: center;
   margin-bottom: 60px;
-  // justify-content: center;
-  // max-width: 206px;
-  // flex-wrap: wrap;
-  // margin-right: 93px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    max-width: 206px;
+    flex-wrap: wrap;
+    margin-right: 93px;
+  }
 
   &__text {
-    // width: 145px;
     font-size: 14px;
     font-weight: 700;
     line-height: 1, 14;
     text-transform: uppercase;
     color: $additional-color;
     margin: 0 0 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 
   &__list {
@@ -105,7 +119,10 @@
 
 .footer-subscribe {
   text-align: center;
-  // width: 570px;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 
   &__text {
     font-size: $font-size;
@@ -114,6 +131,10 @@
     text-transform: uppercase;
     color: $additional-color;
     margin: 0 0 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 
   &__input {
@@ -126,6 +147,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 }
 
@@ -139,7 +164,10 @@
   background-color: $accent-color;
   border: none;
   cursor: pointer;
-  // margin-left: 12px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   &__icon {
     vertical-align: middle;
@@ -147,13 +175,5 @@
     width: 24px;
     height: 24px;
     fill: $additional-color;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
