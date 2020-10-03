@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition-duration $timing-function;
+  padding: 94px 15px;
 
   &--is-hidden {
     opacity: 0;
@@ -15,18 +16,19 @@
 }
 
 .modal {
-  position: relative;
+  // position: relative;
   // width: 450px;
   // height: 609px;
   // width: 528px;
   // height: 581px;
 
-  width: 450px;
+  // width: 450px;
+  // height: 609px;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   height: 609px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: $additional-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -37,18 +39,18 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    // width: 448px;
-    margin-top: 40px;
-    // margin-left: auto;
-    // margin-right: auto;
+    width: 370px;
+    padding: 40px 0 12px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 }
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 95px;
+  right: 17px;
   width: 30px;
   height: 30px;
   background-color: $primary-bg-color;
