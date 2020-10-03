@@ -17,17 +17,6 @@
 
 .modal {
   position: relative;
-  // width: 450px;
-  // height: 609px;
-  // width: 528px;
-  // height: 581px;
-
-  // width: 450px;
-  // height: 609px;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
   background-color: $additional-color;
@@ -36,6 +25,15 @@
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &__heading {
     color: $title-color;
@@ -47,6 +45,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      width: 100%;
+    }
   }
 }
 
