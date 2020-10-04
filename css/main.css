@@ -1229,6 +1229,12 @@ footer {
   padding: 94px 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 0;
+  }
+}
+
 .backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
