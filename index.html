@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <meta name="description" content="Макет Web Studio" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -537,7 +538,11 @@
               placeholder="E-mail"
               class="footer-subscribe__input"
             />
-            <button type="submit" class="subscribe-btn">
+            <button
+              type="submit"
+              class="subscribe-btn"
+              aria-label="Оформляет подписку на рассылку"
+            >
               Подписаться
               <svg class="subscribe-btn__icon">
                 <use href="./images/sprite.svg#subscribe-icon"></use>
@@ -553,7 +558,11 @@
       <div class="modal">
         <div class="modal__header">
           <p class="modal__heading">Оставьте свои данные, мы вам перезвоним</p>
-          <button class="modal-close-button" data-modal-close>
+          <button
+            class="modal-close-button"
+            data-modal-close
+            aria-label="Закрывает модальное окно"
+          >
             <svg class="modal-close-button__icon" width="11px" height="11px">
               <use href="./images/sprite.svg#cross-icon"></use>
             </svg>
