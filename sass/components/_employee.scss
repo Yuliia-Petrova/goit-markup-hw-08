@@ -3,11 +3,7 @@
   padding-bottom: 60px;
 
   &__item {
-    // display: inline-block;
-    // text-align: center;
-    // padding-bottom: 30px;
     margin-bottom: 30px;
-    // margin-right: 30px;
     background-color: $additional-color;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -17,10 +13,6 @@
   &__item:last-child {
     margin-bottom: 0;
   }
-
-  // &__item:last-child {
-  //   margin-right: 0;
-  // }
 
   &__name {
     color: $title-color;
