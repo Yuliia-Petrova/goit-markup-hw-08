@@ -30,6 +30,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: border $transition-duration $timing-function;
     margin-top: 4px;
+    padding: 11px 11px 11px 42px;
 
     @media screen and (min-width: 1200px) {
       width: 448px;
@@ -56,6 +57,13 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      .input-field:hover &,
+      .input-field:focus & {
+        color: $accent-color;
+      }
+    }
   }
 
   &__textarea {
