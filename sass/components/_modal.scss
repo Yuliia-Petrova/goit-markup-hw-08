@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $transition-duration $timing-function;
-  padding: 94px 15px;
+  padding-top: 94px;
 
   @media screen and (min-width: 1200px) {
     padding: 0;
