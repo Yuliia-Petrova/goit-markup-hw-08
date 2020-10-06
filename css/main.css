@@ -610,11 +610,12 @@ footer {
 }
 
 .hero {
+  max-width: 1600px;
   background-color: #2f303a;
   text-align: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   margin-right: auto;
   margin-left: auto;
   padding: 118px 0 118px;
@@ -841,6 +842,7 @@ footer {
 }
 
 .employee__item {
+  padding-bottom: 24px;
   margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
