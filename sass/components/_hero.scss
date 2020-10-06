@@ -2,6 +2,7 @@
   max-width: 1600px;
   background-color: $bg-color;
   text-align: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: auto;
@@ -74,6 +75,7 @@
           ),
           url(../images/header-mobile@2x.jpg);
       }
+      background-size: cover;
     }
   }
   &__container {
