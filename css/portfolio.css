@@ -693,6 +693,9 @@ footer {
   .projects__element:nth-child(2n) {
     margin-right: 0;
   }
+  .projects__element:first-child {
+    height: 404px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
