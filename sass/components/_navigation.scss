@@ -124,7 +124,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: block;
+
     font-size: 18px;
 
     transition: color $transition-duration $timing-function;
@@ -132,6 +132,7 @@
     @media screen and (min-width: 768px) {
       font-size: $font-size;
       padding: 32px 0;
+      display: block;
     }
   }
 
@@ -157,7 +158,7 @@
 
     @media screen and (min-width: 768px) {
       left: 0;
-      bottom: 0;
+      bottom: -1px;
     }
   }
 }
