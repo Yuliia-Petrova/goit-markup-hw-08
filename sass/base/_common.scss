@@ -4,6 +4,10 @@ body {
   letter-spacing: $letter-spacing;
   background-color: $additional-color;
   font-size: $font-size;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .list {

@@ -28,6 +28,16 @@
   }
 }
 
+.header {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $additional-color;
+    z-index: 1;
+  }
+}
+
 .menu-container {
   &.is-open {
     display: block;
@@ -44,7 +54,7 @@
     width: 100%;
     text-align: center;
     z-index: 1;
-    top: 40px;
+    top: 100%;
     left: 0;
   }
 
@@ -59,6 +69,7 @@
 .main {
   @media screen and (max-width: 767px) {
     height: 61px;
+    position: relative;
   }
 
   @media screen and (min-width: 768px) {
