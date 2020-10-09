@@ -471,7 +471,6 @@ footer {
 @media screen and (max-width: 767px) {
   .main {
     height: 61px;
-    position: relative;
   }
 }
 
